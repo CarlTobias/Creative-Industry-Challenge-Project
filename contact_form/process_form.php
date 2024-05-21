@@ -17,9 +17,11 @@ try {
     $mail->SMTPDebug = 0;                    
     $mail->isSMTP();                    
     $mail->Host       = 'smtp.gmail.com';    
-    $mail->SMTPAuth   = true;               
+    $mail->SMTPAuth   = true;             
+    
+    // trying to implement .env file to secure the info
     $mail->Username   = // company gmail;
-    $mail->Password   = // company password;     
+    $mail->Password   = // company password (has to be passkey);     
     $mail->SMTPSecure = 'tls';           
     $mail->Port       = 587;             
 
@@ -33,7 +35,7 @@ try {
     $mail->AltBody = 'This is the plain text version of the email body';
 
     $mail->send();
-    echo 'Message has been sent'; // redirect to another html if needed
+    echo 'Message has been sent'; // redirect to another html if a design is needed
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
