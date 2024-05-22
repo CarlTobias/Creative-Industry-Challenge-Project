@@ -7,11 +7,16 @@ require ".\PHPMailer\src\PHPMailer.php";
 require ".\PHPMailer\src\Exception.php";
 require ".\PHPMailer\src\SMTP.php";
 
-
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+$honeypot = $_POST['honeypot'];
+
 $mail = new PHPMailer(true);
+
+if (!empty($honeypot)) {
+    exit('Spam detected');
+}
 
 try {
     $mail->SMTPDebug = 0;                    
