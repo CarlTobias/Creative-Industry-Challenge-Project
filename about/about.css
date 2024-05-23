@@ -1,0 +1,156 @@
+* {
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ----- TOP NAV BAR ----- */
+
+nav {
+    padding: 15px;
+    background-color: #fefefe;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.pageLinks {
+    list-style: none;
+    display: flex;
+    margin: 0 20px;
+    gap: 0 50px;
+}
+
+.pageLinks a {
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.pageLinks li {
+    color: #1e1e1e;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+}
+
+.pageLinks li:hover,
+.pageLinks li:focus {
+    color: #121212;
+}
+
+.pageLinks li::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+
+    background-color: #121212;
+    opacity: 0;
+    transform: translateX(50%) scaleX(0);
+    transition: transform 0.3s, opacity 0.5s;
+
+    pointer-events: none;
+}
+
+.pageLinks li:hover::after,
+.pageLinks li:focus::after {
+    opacity: 1;
+    transform: translateX(50%) scaleX(1);
+}
+
+.goback {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #3E0202;
+}
+
+.goback nav {
+    margin: 0 30px;
+    width: fit-content;
+    gap: 20px;
+    background-color: #3E0202;
+    font-size: 20px;
+}
+
+.goback a {
+    color: #CD4745;
+    text-decoration: none;
+    background-color: #3E0202;
+}
+
+.goback p {
+    color: #FFFBF7;
+    background-color: #3E0202;
+}
+
+/* ----- MAIN PAGE HEADER ---- */
+
+.header {
+    text-align: center;
+    padding: 10% 0;
+}
+
+.header h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    color: #3E0202;
+}
+
+.header p {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px 0;
+    font-size: 22px;
+    color: #FF0103;
+
+}
+
+.backgroundimage {
+    background-image: linear-gradient(354deg, rgba(0, 0, 0, 0) 11%, rgba(54, 13, 13, 0.7994047960981268) 82%),
+        url("/drawables/image15.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.section1 {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+aside {
+    text-align: center;
+}
+
+.one h2 {
+}
+
+aside p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section1 img {
+    height: 100%;
+}
