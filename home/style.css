@@ -1,5 +1,5 @@
 body {
-    background-color: #fefefe;
+    background-color: #FEFEFE;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 /* ----- TOP NAV BAR ----- */
 
 nav {
-    background-color: #fefefe;
+    background-color: #FEFEFE;
 
     display: flex;
     flex-direction: row;
@@ -30,11 +30,11 @@ nav {
 
 .pageLinks a {
     text-decoration: none;
-    color: #1e1e1e;
+    color: #1E1E1E;
 }
 
 .pageLinks li {
-    color: #1e1e1e;
+    color: #1E1E1E;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -87,7 +87,7 @@ nav {
 }
 
 .headerText {
-    color: #fefefe;
+    color: #FEFEFE;
     font-family: "League Spartan", sans-serif;
     font-size: 100px;
     font-weight: 800;
@@ -100,11 +100,12 @@ nav {
     border: none;
     border-radius: 50px;
 
-    color: #fefefe;
+    color: #FEFEFE;
     font-family: "League Spartan", sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
+
 
 /* ----- PART TWO ----- */
 
@@ -165,4 +166,44 @@ nav {
 
 .imageSliderImage {
     width: calc(100vw / 4);
+}
+
+
+/* ----- PART THREE ----- */
+
+.partThree {
+    background-color: #FBE8DE;
+
+    display: flex;
+    height: 100vh;
+}
+
+.partThreeHeader {
+    background-color: #FEFEFE;
+    margin-top: 100px;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    color: #3E0202;
+    font-family: "League Spartan", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+
+
+    display: flex;
+    height: fit-content;
+}
+
+.calendar {
+    background-color: #511A19;
+    margin-top: 175px;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(100vh / 2);
+    width: 100vh;
 }
