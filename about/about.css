@@ -1,5 +1,4 @@
 * {
-    background-color: #fefefe;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -124,33 +123,41 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
 
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center; 
+    height: 70vh;
+    position: relative;
 }
 
 .section1 {
+    background-color:#FBE8DE;
+    overflow: hidden;
     width: 80%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
-    align-items: center;
-    border-radius: 20px;
+    justify-content: center;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -500px;
 }
 
+/* change font size and padding */
 aside {
     text-align: center;
+    margin: 50px;
 }
 
-.one h2 {
-}
-
-aside p {
-    width: 50%;
-    margin: 0 auto;
+.one h2, 
+.two h2 {
+    padding: 60px 0;
+    font-family: "League Spartan", sans-serif;
+    font-size: 35px;
 }
 
 .section1 img {
-    height: 100%;
+    width: 800px;
 }
