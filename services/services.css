@@ -157,7 +157,7 @@ section p {
 .heading {
     position: absolute;
     left: 0;
-    margin-bottom: 40%;
+    margin-bottom: 38%;
 }
 
 .heading h2 {
@@ -176,7 +176,6 @@ section p {
     width: 75%;
     justify-content: space-around;
     position: relative;
-    top: 15%;
     background: none;
 }
 
