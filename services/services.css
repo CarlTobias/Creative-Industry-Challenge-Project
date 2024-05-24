@@ -10,6 +10,7 @@
 /* ----- TOP NAV BAR ----- */
 
 nav {
+    padding: 0 15px;
     background-color: #FEFEFE;
 
     display: flex;
