@@ -44,11 +44,18 @@
                         service to our growing customers from all corners of the globe.
                     </p>
                 </div>
-
-                <div class="imageSlider">
-                    <img class="imageSliderImage" src="\drawables\image3.png">
-                    <img class="imageSliderImage" src="\drawables\image4.png">
-                    <img class="imageSliderImage" src="\drawables\image5.png">
+                
+                
+                <div class="galleryContainer">
+                    <!-- Change button as image if needed but keep their ids -->
+                    <button class="navButton" id="prevButton"><</button>
+                    <div class="imageSlider">
+                        <!-- Add gradient to first and last image-->
+                        <img class="imageSliderImage firstIamge" src="\drawables\image3.png"> 
+                        <img class="imageSliderImage" id="image2" src="\drawables\image4.png">
+                        <img class="imageSliderImage secondImage" src="\drawables\image5.png">
+                    </div>
+                    <button class="navButton" id="nextButton">></button>
                 </div>
             </div>
 
@@ -65,5 +72,6 @@
                 </div>
             </div>
         </main>
+        <script src="main.js"></script>
     </body>
 </html>
