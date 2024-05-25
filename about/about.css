@@ -156,11 +156,15 @@ aside {
 aside p {
     width: 50%;
     margin: 0 auto;
+    font-size: 20px;
+}
 .one h2, 
 .two h2 {
     padding: 60px 0;
     font-family: "League Spartan", sans-serif;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #3E0202;
 }
 
 .section1 img {
