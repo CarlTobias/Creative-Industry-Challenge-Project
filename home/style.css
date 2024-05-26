@@ -153,6 +153,7 @@ nav {
     font-size: 26px;
     font-weight: 400;
     text-align: center;
+
 }
 
 .galleryContainer {
@@ -261,6 +262,7 @@ footer {
     background-color: #000000;
     display: flex;
     position: relative;
+    box-sizing: border-box;
 }
 
 footer .sideA {
