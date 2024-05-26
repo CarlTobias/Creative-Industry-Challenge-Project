@@ -229,19 +229,20 @@ textarea:focus {
     outline: none;
 }
 
-.submit {
+.send {
     text-align: right;
 }
 
-#submit {
+#send {
     color: #FFFBF7;
     background-color: #FF0103;
-    padding: 20px 40px;
+    padding: 10px 40px;
     border-radius: 0 50px 50px 0;
     font-size: 20px;
     font-weight: bold;
     margin: 0 auto;
     border: none;
+    font-size: 22px;
 }
 
 
