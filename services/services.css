@@ -97,6 +97,7 @@ nav {
     background-color: #3E0202;
 }
 
+
 /* ----- MAIN PAGE HEADER ---- */
 
 .header {
@@ -107,7 +108,7 @@ nav {
 .header h1 {
     font-family: "League Spartan", sans-serif;
     font-size: 80px;
-    font-weight: bolder;
+    font-weight: 800;
     color: #3E0202;
 }
 
@@ -119,11 +120,13 @@ nav {
     color: #FF0103;
 }
 
+
 /* ----- BG IMAGE ---- */
 
 .bg img{
     width: 100%;
 }
+
 
 /* ----- SECTION ---- */
 
@@ -138,6 +141,7 @@ section p {
     font-weight: 500;
     font-size: 24px;
 }
+
 
 /* ----- BACKGROUND ---- */
 
@@ -169,6 +173,7 @@ section p {
     font-family: "League Spartan", sans-serif;
 }
 
+
 /* ----- INQUIRY ---- */
 
 .inquiry {
@@ -181,13 +186,13 @@ section p {
     border-radius: 0 20px 20px 0;
 }
 
-.partone {
+.partOne {
     width: 50%;
     padding: 40px;
     color: #0E0C0C;
 }
 
-.parttwo {
+.partTwo {
     width: 50%;
     padding: 40px;
     border-radius: 0 20px 20px 0;
@@ -225,6 +230,7 @@ h4 {
     font-size: 26px;
     margin-bottom: 5%;
 }
+
 
 /* ----- FOOTER ---- */
 

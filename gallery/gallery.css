@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /* ----- TOP NAV BAR ----- */
 
 nav {
@@ -96,6 +97,7 @@ nav {
     background-color: #3E0202;
 }
 
+
 /* ----- MAIN PAGE HEADER ---- */
 
 .header {
@@ -106,7 +108,7 @@ nav {
 .header h1 {
     font-family: "League Spartan", sans-serif;
     font-size: 80px;
-    font-weight: bolder;
+    font-weight: 800;
     color: #3E0202;
 }
 
@@ -117,6 +119,7 @@ nav {
     font-size: 22px;
     color: #FF0103;
 }
+
 
 /* ----- FOOTER ---- */
 
