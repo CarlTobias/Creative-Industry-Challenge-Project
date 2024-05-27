@@ -17,7 +17,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 90vh);
+    height: 10vh;
 }
 
 .logo {
@@ -87,7 +87,8 @@ nav {
     flex-direction: column;
     justify-content: center;  
     align-items: center; 
-    height: calc(100vh - 10vh);
+    height: 100vh;
+    overflow: hidden;
 }
 
 .headerText {
@@ -114,50 +115,35 @@ nav {
 /* ----- PART TWO ----- */
 
 .partTwo {
+    height: 110vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
-    height: 100vh;
-}
-
-.partTwoText {
-    padding-top: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .partTwoHeader {
-    margin-bottom: 10px;
-
     color: #3E0202;
     font-family: "League Spartan", sans-serif;
     font-size: 80px;
     font-weight: 800;
-    text-align: center;
 }
 
 .partTwoSubtitle {
-    margin: 0;
-
     color: #FF0103;
     font-family: "League Spartan", sans-serif;
     font-size: 40px;
     font-weight: 500;
-    text-align: center;
 }
 
 .partTwoParagraph {
-    margin: 40px;
-
     color: #0E0C0C;
     font-family: "Poppins", sans-serif;
     font-size: 26px;
     font-weight: 400;
-    text-align: center;
+    margin: 5vh 0;
 }
 
 .galleryContainer {
@@ -165,7 +151,7 @@ nav {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 50px;
+    margin: 5vh 2vw;
 }
 
 .imageSlider {
@@ -177,12 +163,11 @@ nav {
 .imageSliderImage {
     /* width and height added to keep them same size, manually
     resize images and remove width and height */
-    margin: 20px;
-
-    width: auto;
-    height: auto;
+    margin: 2vh 1vh;
+    width: calc(100%/3.5);
     background-size: cover;
     background-position: center;
+    flex-shrink: 0;
 }
 
 .imageSliderImage .firstImage {
@@ -207,11 +192,11 @@ nav {
 }
 
 #prevButton {
-  left: 40px;
+  left: 7vw;
 }
 
 #nextButton {
-  right: 40px;
+  right: 7vw;
 }
 
 
@@ -221,36 +206,43 @@ nav {
     background-color: #FBE8DE;
 
     display: flex;
-    height: 100vh;
+    height: 110vh;
+    overflow: hidden;
 }
 
 .partThreeHeader {
     background-color: #FEFEFE;
     margin-top: 100px;
-    padding: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 40px;
     
     color: #3E0202;
     font-family: "League Spartan", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 80px;
+    font-weight: 800;
     text-align: center;
-
-    display: flex;
     height: fit-content;
 }
 
 .calendarSection {
+    position: absolute;
+   
+    width: 70vw;
+    height: 70vh;
     background-color: #511A19;
-    margin-top: 175px;
+    margin-top: 230px;
     border-radius: 32px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: calc(100vh / 2);
-    width: 100vw;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calendar {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
 }
 
 .calendar ul {
@@ -265,7 +257,10 @@ nav {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
 }
 
 .monthYear {
