@@ -6,6 +6,9 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+h2, h3 {
+    margin: 0;
+}
 
 /* ----- TOP NAV BAR ----- */
 
@@ -240,9 +243,10 @@ nav {
 }
 
 .calendar {
-    align-self: center;
     justify-self: center;
     width: 100%;
+    padding: 30px;
+    overflow: hidden;
 }
 
 .calendar ul {
@@ -257,18 +261,24 @@ nav {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    font-weight: 300;
 }
 
 .calendar ul li {
     width: calc(100% / 7);
+    padding: 2.5vh 0;
 }
 
 .monthYear {
     color: #FEFEFE;
     font-family: "League Spartan", sans-serif;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 70px;
     font-weight: 700;
-    text-align: center;
+}
+
+.calender .days {
+    margin-bottom: 20px;
 }
 
 
