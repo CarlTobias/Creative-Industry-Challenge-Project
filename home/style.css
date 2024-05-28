@@ -342,7 +342,7 @@ footer p {
 
 .sideB {
     margin-right: 20px;
-
+    width: fit-content;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -412,6 +412,7 @@ footer p {
 
     .sideB {
         margin-right: 150px;
+        width: fit-content;
     }
 }
 
@@ -483,6 +484,7 @@ footer p {
 
     .sideB {
         margin-right: 100px;
+        width: fit-content;
     }
 
     .sideB img {
@@ -493,7 +495,7 @@ footer p {
 
 /* ----- 1024px ----- */
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
     .logo {
         width: 6%;
     }
@@ -562,6 +564,184 @@ footer p {
 
     .sideB {
         margin-right: 80px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+/* ----- 768px ----- */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .headerText {
+        font-size: 60px;
+    }
+
+    .inquiryButton {
+        padding: 18px 30px;
+        font-size: 24px;
+    }
+
+    .partTwoHeader {
+        font-size: 60px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 20px;
+    }
+
+    .partTwoParagraph {
+        font-size: 16px;
+    }
+
+    .partThreeHeader {
+        margin-top: 60px;
+        padding: 30px;
+
+        font-size: 50px;
+    }
+
+    .calendarSection {
+        margin-top: 140px;
+    }
+
+    .calendar {
+        padding: 20px;
+    }
+
+    .calendar ul {
+        font-size: 12px;
+    }
+
+    .monthYear {
+        font-size: 40px;
+    }
+
+    .calendar .days li::before {
+        height: 25px;
+        width: 25px;
+    }
+
+    .landscapeImage {
+        display: none;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    
+    nav {
+        height: 8vh;
+    }
+
+    
+    .pageLinks {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        right: -20px;
+        background-color: #FFFFFF;
+    }
+
+    ul li {
+        margin: 10px 0;
+        margin-right: 50px;
+    }
+
+
+    .splashScreenHeader {
+        width: 100vw;
+    }
+
+    .headerText {
+        font-size: 45px;
+    }
+
+    .inquiryButton {
+        padding: 18px 30px;
+        font-size: 24px;
+    }
+
+    .partTwoHeader {
+        font-size: 60px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 20px;
+    }
+
+    .partTwoParagraph {
+        font-size: 16px;
+    }
+
+    .partThreeHeader {
+        margin-top: 60px;
+        padding: 30px;
+
+        font-size: 50px;
+    }
+
+    .calendarSection {
+        margin-top: 140px;
+    }
+
+    .calendar {
+        padding: 20px;
+    }
+
+    .calendar ul {
+        font-size: 12px;
+    }
+
+    .monthYear {
+        font-size: 40px;
+    }
+
+    .calendar .days li::before {
+        height: 25px;
+        width: 25px;
+    }
+
+    .landscapeImage {
+        display: none;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+        width: fit-content;
     }
 
     .sideB img {
