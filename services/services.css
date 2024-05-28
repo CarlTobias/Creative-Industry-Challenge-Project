@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 8%;
 }
 
 .pageLinks {
@@ -185,7 +185,9 @@ section p {
     margin-top: 15vw;
     border-radius: 0 20px 20px 0;
     background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 /* ----- INQUIRY PART ONE ---- */
 
@@ -249,6 +251,8 @@ textarea:focus {
     margin: 0 auto;
     border: none;
     font-size: 22px;
+    width: 150px;
+    cursor: pointer;
 }
 
 
@@ -276,7 +280,7 @@ textarea:focus {
     height: 100%;
 }
 
-h3 {
+.partTwo h3 {
     font-family: "League Spartan", sans-serif;
     font-size: 40px;
 }
@@ -286,7 +290,7 @@ h3 {
     flex-direction: column;
 }
 
-h4 {
+.partTwo h4 {
     font-family: "League Spartan", sans-serif;
     font-size: 26px;
     margin-bottom: 5%;
@@ -343,4 +347,470 @@ footer p {
 
 .sideB img:hover {
     filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* ----- 2560px ----- */
+@media only screen and (min-width: 2560px) {
+    .pageLinks li {
+        font-size: 30px;
+    }
+
+    .goback nav {
+        font-size: 30px;
+    }
+
+    .header h1 {
+        font-size: 120px;
+    }
+
+    .header p {
+        font-size: 30px;
+    }
+
+    section p {
+        font-size: 30px;
+    }
+
+    .sideA {
+        margin-left: 150px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .sideB {
+        margin-right: 150px;
+    }
+}
+
+
+/* ----- 1440px ----- */
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .pageLinks li {
+        font-size: 20px;
+    }
+
+    .header h1 {
+        font-size: 80px;
+    }
+
+    .header p {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 24px;
+    }
+
+    .sideA {
+        margin-left: 100px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .sideB {
+        margin-right: 100px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 1024px ----- */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .logo {
+        width: 6%;
+    }
+
+    .pageLinks li {
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 60px;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 18px;
+    }
+
+    .heading {
+        margin-bottom: 50%;
+    }
+
+    .heading h2 {
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .inquiry {
+        width: 90vw;
+        height: 75vh;
+        position: relative;
+        margin-top: 10vw;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .inputfields {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    form input {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .partTwo h3 {
+        font-size: 26px;
+    }
+
+    .partTwo h4 {
+        font-size: 20px;
+    }
+
+    .partTwo p {
+        font-size: 16px;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 768px ----- */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        width: 8%;
+    }
+
+    .pageLinks li {
+        font-size: 14px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .heading {
+        margin-bottom: 70%;
+    }
+
+    .heading h2 {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    .inquiry {
+        width: 90vw;
+        height: 75vh;
+        position: relative;
+        margin-top: 8vw;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .inputfields {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    form input {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .partTwo h3 {
+        font-size: 26px;
+    }
+
+    .partTwo h4 {
+        font-size: 20px;
+    }
+
+    .partTwo p {
+        font-size: 16px;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 6px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+
+    .sideB img:hover {
+        filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+    }
+
+
+    /* ----- MEDIA QUERIES ----- */
+
+    /* ----- 2560px ----- */
+    @media only screen and (min-width: 2560px) {
+        .pageLinks li {
+            font-size: 30px;
+        }
+
+        .goback nav {
+            font-size: 30px;
+        }
+
+        .header h1 {
+            font-size: 120px;
+        }
+
+        .header p {
+            font-size: 30px;
+        }
+
+        section p {
+            font-size: 30px;
+        }
+
+        .sideA {
+            margin-left: 150px;
+        }
+
+        footer p {
+            font-size: 30px;
+        }
+
+        .sideB {
+            margin-right: 150px;
+        }
+    }
+
+
+    /* ----- 1440px ----- */
+
+    @media only screen and (min-width: 1440px) and (max-width: 2559px) {
+        .pageLinks li {
+            font-size: 20px;
+        }
+
+        .header h1 {
+            font-size: 80px;
+        }
+
+        .header p {
+            font-size: 24px;
+        }
+
+        section p {
+            font-size: 24px;
+        }
+
+        .sideA {
+            margin-left: 100px;
+        }
+
+        footer p {
+            font-size: 20px;
+        }
+
+        .sideB {
+            margin-right: 100px;
+        }
+
+        .sideB img {
+            width: 6%;
+        }
+    }
+
+
+    /* ----- 1024px ----- */
+
+    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+        .logo {
+            width: 6%;
+        }
+
+        .pageLinks li {
+            font-size: 16px;
+        }
+
+        .header h1 {
+            font-size: 60px;
+        }
+
+        .header p {
+            font-size: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+        }
+
+        .heading {
+            margin-bottom: 50%;
+        }
+
+        .heading h2 {
+            padding: 30px;
+            font-size: 40px;
+        }
+
+        .inquiry {
+            width: 90vw;
+            height: 75vh;
+            position: relative;
+            margin-top: 10vw;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .inputfields {
+            width: 90%;
+            margin-left: 10px;
+        }
+
+        form input {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .partTwo h3 {
+            font-size: 26px;
+        }
+
+        .partTwo h4 {
+            font-size: 20px;
+        }
+
+        .partTwo p {
+            font-size: 16px;
+        }
+
+        .sideA {
+            margin-left: 80px;
+        }
+
+        footer p {
+            font-size: 10px;
+        }
+
+        .sideB {
+            margin-right: 80px;
+        }
+
+        .sideB img {
+            width: 6%;
+        }
+    }
+
+
+    /* ----- 768px ----- */
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .logo {
+            width: 8%;
+        }
+
+        .pageLinks li {
+            font-size: 14px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        .heading {
+            margin-bottom: 70%;
+        }
+
+        .heading h2 {
+            padding: 20px;
+            font-size: 25px;
+        }
+
+        .inquiry {
+            width: 90vw;
+            height: 75vh;
+            position: relative;
+            margin-top: 8vw;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .inputfields {
+            width: 90%;
+            margin-left: 10px;
+        }
+
+        form input {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .partTwo h3 {
+            font-size: 26px;
+        }
+
+        .partTwo h4 {
+            font-size: 20px;
+        }
+
+        .partTwo p {
+            font-size: 16px;
+        }
+
+        .sideA {
+            margin-left: 80px;
+        }
+
+        footer p {
+            font-size: 6px;
+        }
+
+        .sideB {
+            margin-right: 80px;
+        }
+
+        .sideB img {
+            width: 6%;
+        }
+    }
 }

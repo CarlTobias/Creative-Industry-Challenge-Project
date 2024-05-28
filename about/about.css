@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 8%;
 }
 
 .pageLinks {
@@ -83,7 +83,6 @@ nav {
     width: fit-content;
     gap: 20px;
     background-color: #3E0202;
-    font-size: 20px;
 }
 
 .goback a {
@@ -150,25 +149,28 @@ nav {
     margin-bottom: -400px;
 }
 
-/* change font size and padding */
 aside {
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    margin: 50px;
 }
 
-aside p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-}
 .one h2, 
 .two h2 {
-    margin-top: 20px;
     padding: 30px 0;
     font-family: "League Spartan", sans-serif;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 600;
     color: #3E0202;
+}
+
+.one p,
+.two p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
 }
 
 .section1 img {
@@ -202,7 +204,8 @@ aside p {
 
 .section2 p {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
+    width: 40vw;
 }
 
 
@@ -211,9 +214,9 @@ aside p {
 .boxes {
     display: flex;
     flex-direction: row;
-    gap: 5%;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 }
 
 .box {
@@ -221,6 +224,7 @@ aside p {
     width: 40vh;
     height: 60vh;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+
     display: flex;
     flex-direction: column;
     align-items: first baseline;
@@ -248,7 +252,7 @@ aside p {
 .box p {
     margin-top: 2vh;
     text-align: center;
-    width: 80%;
+    width: 20vw;
     font-size: 18px;
     align-self: center;
 }
@@ -269,6 +273,7 @@ footer {
 
 .sideA {
     margin-left: 20px;
+    width: 100%;
     width: 100%;
 
     display: flex;
@@ -298,7 +303,10 @@ footer p {
 }
 
 
+
 .sideB img {
+    width: 8%;
+    cursor: pointer;
     width: 8%;
     cursor: pointer;
 }
@@ -307,5 +315,224 @@ footer p {
     filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
 }
 
+
 /* ----- MEDIA QUERIES ----- */
 
+/* ----- 2560px ----- */
+@media only screen and (min-width: 2560px) {
+   .pageLinks li {
+        font-size: 30px;
+    }
+
+    .goback nav {
+        font-size: 30px;
+    }
+
+    .header h1 {
+        font-size: 150px;
+    }
+
+    .header p {
+        font-size: 30px;
+    }
+
+    .one h2, 
+    .two h2 {
+        font-size: 80px;
+    }
+
+    .one p, 
+    .two p {
+        font-size: 34px;
+    }
+
+    .box p {
+        font-size: 30px;
+    }
+
+    .sideA {
+        margin-left: 150px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .sideB {
+        margin-right: 150px;
+    }
+}
+
+/* ----- 1440px ----- */
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .pageLinks li {
+        font-size: 18px;
+    }
+
+    .goback nav {
+        font-size: 18px;
+    }
+
+    .header h1 {
+        font-size: 100px;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+
+    aside {
+        padding: 100px 0;
+    }
+
+    .section2 p {
+        font-size: 20px;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 1024px ----- */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .logo {
+        width: 6%;
+    }
+
+    .pageLinks li {
+        font-size: 16px;
+    }
+
+    .goback nav {
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 60px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    aside {
+        padding: 40px 0;
+    }
+
+    .one h2,
+    .two h2 {
+        font-size: 28px;
+    }
+
+    .one p,
+    .two p {
+        font-size: 16px;
+    }
+    
+    .section2 p {
+        font-size: 16px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 768px ----- */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        width: 6%;
+    }
+
+    .pageLinks li {
+        font-size: 16px;
+    }
+
+    .goback nav {
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    aside {
+        padding: 20px 0;
+    }
+
+    .one h2,
+    .two h2 {
+        font-size: 22px;
+    }
+
+    .one p,
+    .two p {
+        font-size: 12px;
+    }
+
+    .section2 p {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 30vh;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .sideA {
+        margin-left: 60px;
+    }
+
+    footer p {
+        font-size: 6px;
+    }
+
+    .sideB {
+        margin-right: 60px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
