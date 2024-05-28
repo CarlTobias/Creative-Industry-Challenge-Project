@@ -55,30 +55,24 @@
         use PHPMailer\PHPMailer\Exception;
         use Dotenv\Dotenv;
         
-        // Load environment variables
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
         
-        // Get form data
         $name = $_POST['name'] ?? '';
         $email = $_POST['email'] ?? '';
         $message = $_POST['message'] ?? '';
         $honeypot = $_POST['honeypot'] ?? '';
         
-        // Retrieve environment variables
         $username = getenv('EMAIL_USERNAME');
         $password = getenv('EMAIL_PASSWORD');
         
-        // Initialize PHPMailer
         $mail = new PHPMailer(true);
         
-        // Check for honeypot spam detection
         if (!empty($honeypot)) {
             exit('Spam detected');
         }
         
         try {
-            // SMTP configuration
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
@@ -100,7 +94,7 @@
             $name = htmlspecialchars($name, ENT_QUOTES);
             $email = htmlspecialchars($email, ENT_QUOTES);
             $message = htmlspecialchars($message, ENT_QUOTES);
-            $mail->Body = nl2br("name: $name\nemail: $email\nmessage: $message"); // Combined sanitized variables
+            $mail->Body = nl2br("name: $name\nemail: $email\nmessage: $message");
         
             $mail->AltBody = 'This is the plain text version of the email body';
         
