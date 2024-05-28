@@ -10,6 +10,7 @@ h2, h3 {
     margin: 0;
 }
 
+
 /* ----- TOP NAV BAR ----- */
 
 nav {
@@ -90,7 +91,7 @@ nav {
     flex-direction: column;
     justify-content: center;  
     align-items: center; 
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -118,7 +119,7 @@ nav {
 /* ----- PART TWO ----- */
 
 .partTwo {
-    height: 110vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -209,7 +210,7 @@ nav {
     background-color: #FBE8DE;
 
     display: flex;
-    height: 110vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -230,7 +231,7 @@ nav {
     position: absolute;
    
     width: 70vw;
-    height: 70vh;
+    height: 65vh;
     background-color: #511A19;
     margin-top: 230px;
     border-radius: 32px;
@@ -286,7 +287,9 @@ nav {
 
 footer {
     background-color: #0E0C0C;
+
     width: 100%;
+    height: 10vh;
 
     display: flex;
     justify-content: space-between;
@@ -303,12 +306,14 @@ footer {
 }
 
 footer p {
-    color: #FFFFFF;
     width: max-content;
+
+    color: #FFFFFF;
+    font-size: 20px;
 }
 
 .footerlogo {
-    height: 50px;
+    width: 20%;
 }
 
 .sideB {
@@ -327,4 +332,142 @@ footer p {
 .sideB img:hover {
     filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
     cursor: pointer;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* ----- 2560px ----- */
+@media only screen and (min-width: 2560px) {
+    .pageLinks li {
+        font-size: 30px;
+    }
+
+    .headerText {
+        font-size: 120px;
+    }
+    
+    .inquiryButton {
+        padding: 30px 65px;
+
+        font-size: 50px;
+    }
+
+    .partTwoHeader {
+        font-size: 100px;
+    }
+    
+    .partTwoSubtitle {
+        font-size: 60px;
+    }
+    
+    .partTwoParagraph {
+        font-size: 40px;
+    }
+
+    .calendar {
+        padding: 45px;
+    }
+    
+    .calendar ul {
+        font-size: 30px;
+    }
+
+    .monthYear {
+        font-size: 100px;
+    }
+
+    .sideA {
+        margin-left: 150px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .sideB {
+        margin-right: 150px;
+    }
+
+    footer img {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .pageLinks li {
+        font-size: 20px;
+    }
+
+    .headerText {
+        font-size: 100px;
+    }
+
+    .inquiryButton {
+        padding: 20px 35px;
+
+        font-size: 30px;
+    }
+
+    .partTwoHeader {
+        font-size: 80px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 40px;
+    }
+
+    .partTwoParagraph {
+        font-size: 20px;
+    }
+
+    .partThreeHeader {
+        margin-top: 80px;
+        padding: 30px;
+
+        font-size: 50px;
+    }
+
+    .calendarSection {
+        position: absolute;
+
+        width: 70vw;
+        height: 65vh;
+        margin-top: 160px;
+        border-radius: 32px;
+
+        display: flex;
+        flex-direction: row;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .calendar {
+        padding: 25px;
+    }
+
+    .calendar ul {
+        font-size: 14px;
+    }
+
+    .monthYear {
+        font-size: 60px;
+    }
+
+    .sideA {
+        margin-left: 100px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .sideB {
+        margin-right: 100px;
+    }
+
+    footer img {
+        width: 8%;
+    }
 }
