@@ -185,6 +185,7 @@ section p {
     margin-top: 15vw;
     border-radius: 0 20px 20px 0;
     background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* ----- INQUIRY PART ONE ---- */
