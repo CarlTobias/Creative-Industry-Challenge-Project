@@ -21,7 +21,7 @@
 
         ```env
         EMAIL_USERNAME=your_actual_email@example.com
-        EMAIL_PASSWORD=your_actual_password
+        EMAIL_PASSWORD=your_app_password
         ```
 
     3. Update your `process_form.php` to load the environment variables:
