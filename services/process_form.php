@@ -10,7 +10,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__ . "../.env");
 $dotenv->load();
 
 // Get form data
@@ -20,7 +20,7 @@ $message = $_POST['message'] ?? '';
 $honeypot = $_POST['honeypot'] ?? '';
 
 // Email Data
-$envFilePath = __DIR__ . '/.env';
+$envFilePath = __DIR__ . '../.env';
 
 // Parse the .env file
 $envVariables = parse_ini_file($envFilePath);
