@@ -49,8 +49,8 @@ try {
     $mail->Port = 587;
 
     // Set sender and recipient
-    $mail->setFrom("Throwaway@gmail.com", 'Throwaway'); // Replace with sender's email address
-    $mail->addAddress($email, $name); // Replace with recipient's email address
+    $mail->setFrom($email, $name); // Replace with sender's email address
+    $mail->addAddress($username, "Throwaway"); // Replace with recipient's email address
     $mail->addReplyTo($email, $name);
 
     // Email content
@@ -60,7 +60,7 @@ try {
     $name = htmlspecialchars($name, ENT_QUOTES);
     $email = htmlspecialchars($email, ENT_QUOTES);
     $message = htmlspecialchars($message, ENT_QUOTES);
-    $mail->Body = nl2br("$name\n$email\n$message"); // Combine sanitized variables
+    $mail->Body = nl2br("Name: $name\nEmail: $email\nMessage: $message"); // Combined sanitized variables
 
     $mail->AltBody = 'This is the plain text version of the email body';
 
