@@ -324,6 +324,7 @@ footer p {
     width: 4%;
 }
 
-.sideB:hover {
+.sideB img:hover {
     filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+    cursor: pointer;
 }
