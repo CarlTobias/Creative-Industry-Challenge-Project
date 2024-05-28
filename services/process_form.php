@@ -2,15 +2,15 @@
 
 // Include PHPMailer classes
 require "../vendor/autoload.php";
-require "./PHPMailer/src/PHPMailer.php";
-require "./PHPMailer/src/Exception.php";
-require "./PHPMailer/src/SMTP.php";
+require "../PHPMailer/src/PHPMailer.php";
+require "../PHPMailer/src/Exception.php";
+require "../PHPMailer/src/SMTP.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable(__DIR__ . "../.env");
+$dotenv = Dotenv::createImmutable("..");
 $dotenv->load();
 
 // Get form data
@@ -20,7 +20,7 @@ $message = $_POST['message'] ?? '';
 $honeypot = $_POST['honeypot'] ?? '';
 
 // Email Data
-$envFilePath = __DIR__ . '../.env';
+$envFilePath = '../.env';
 
 // Parse the .env file
 $envVariables = parse_ini_file($envFilePath);
@@ -60,7 +60,7 @@ try {
     $name = htmlspecialchars($name, ENT_QUOTES);
     $email = htmlspecialchars($email, ENT_QUOTES);
     $message = htmlspecialchars($message, ENT_QUOTES);
-    $mail->Body = nl2br("Name: $name\nEmail: $email\nMessage: $message"); // Combined sanitized variables
+    $mail->Body = nl2br("name: $name\nemail: $email\nmessage: $message"); 
 
     $mail->AltBody = 'This is the plain text version of the email body';
 
