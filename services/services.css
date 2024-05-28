@@ -146,7 +146,7 @@ section p {
 /* ----- BACKGROUND ---- */
 
 .background {
-    background-image: url("/drawables/image14.png");
+    background-image: url("../drawables/image14.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top;

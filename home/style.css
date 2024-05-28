@@ -82,7 +82,7 @@ nav {
 
 .splashScreenHeader {
     background-image: linear-gradient(354deg, rgba(0, 0, 0, 0) 11%, rgba(54, 13, 13, 0.7994047960981268) 82%),
-        url("/drawables/splashscreenimage1.png");
+        url("../drawables/splashscreenimage1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -249,17 +249,21 @@ nav {
 }
 
 .calendar ul {
+    margin: 0;
     color: #FEFEFE;
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 200;
     text-align: center;
-    margin: 0;
 
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     font-weight: 300;
+}
+
+.calendar .weeks {
+    font-weight: 600;
 }
 
 .calendar ul li {
@@ -279,6 +283,7 @@ nav {
     cursor: pointer;
     margin-top: 5vh;
 }
+
 .calendar .days li::before {
     position: absolute;
     content: "";
@@ -288,11 +293,6 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-}
-
-.days li:hover::before {
-    background-color: #3E0202;
-    z-index: -1;
 }
 
 .days li.inactive {
