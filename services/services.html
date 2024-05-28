@@ -14,18 +14,18 @@
 </head>
 <body>
     <nav>
-        <img class="logo" src="/drawables/Logo.png" alt="Logo.png"> <!-- *INSERT LOGO HERE -->
+        <img class="logo" src="../drawables/Logo.png" alt="Logo.png"> <!-- *INSERT LOGO HERE -->
     
         <ul class="pageLinks">
-            <li><a href="/home/index.html">Home</a></li>
-            <li><a href="/about/about.html">About Us</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="/gallery/gallery.html">Gallery</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <div class="goback">
         <nav> 
-            <a href="/home/index.html">Home</a>
+            <a href="../index.html">Home</a>
             <p>/</p>
             <p>Services</p>
         </nav>
@@ -37,7 +37,7 @@
             <p>It’s our pleasure to serve you with services that you may reach out to us about.</p>
         </div>
         <div class="bg">
-            <img src="/drawables/bg3.png" alt="airport">
+            <img src="../drawables/bg3.png" alt="airport">
         </div>
         <section>
             <p><b>At Pinoy Travels and Tourism,</b> we offer the comprehensive individual and corporate travel itineraries within a short turnaround time. Our group of highly skilled personnel were trained to understand client needs and offer the best options available. We have partnered with all major airlines, reputable big travel agencies, world renowned tour operators in various destinations to offer the best rates and hassle-free travel experience.</p>
@@ -52,15 +52,16 @@
                 <div class="partOne">
                     <h3>Inquiry Form</h3>
                     <div class="inputfields">
-                        <form>
-                            <input type="text" id="name" placeholder="Name">
+                        <form action="process_form.php" method="POST">
+                            <input type="text" id="name" name="name" placeholder="Name">
                             <br>
-                            <input type="text" id="email" placeholder="Email">
+                            <input type="text" id="email" name="email" type="email" placeholder="Email">
                             <br>
-                            <textarea id="message" placeholder="Message"></textarea>
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
                             <br>
+                            <textarea id="honeypot" name="honeypot" style="display: none;"></textarea>
                             <div class="send">
-                                <button id="send" type="send">Send</button>
+                                <input id="send" type="submit" value="Submit">
                             </div>
                         </form>
                     </div>
@@ -70,35 +71,35 @@
                     <h3>Contact Details</h3>
                     <div class="details">
                         <div class="items">
-                            <img src="/drawables/location_icon.png" alt="">
+                            <img src="../drawables/location_icon.png" alt="">
                             <div class="text">
                                 <h4>Location</h4>
                                 <p>Office No. 307-31, 3rd Floor<br>Jumeirah Bay X2 JLT, Dubai<br>United Arab Emirates</p>
                             </div>
                         </div>
                         <div class="items">
-                            <img src="/drawables/time_icon.png" alt="">
+                            <img src="../drawables/time_icon.png" alt="">
                             <div class="text">
                                 <h4>Operating Hours</h4>
                                 <p>09:00 - 18:00 (GMT +4)</p>
                             </div>
                         </div>
                         <div class="items">
-                            <img src="/drawables/mail_icon.png" alt="">
+                            <img src="../drawables/mail_icon.png" alt="">
                             <div class="text">
                                 <h4>Email</h4>
                                 <p>info@pinoytravels.net</p>
                             </div>
                         </div>
                         <div class="items">
-                            <img src="/drawables/call_icon.png" alt="">
+                            <img src="../drawables/call_icon.png" alt="">
                             <div class="text">
                                 <h4>Office No.</h4>
                                 <p>+971 4 427 3633</p>
                             </div>
                         </div>
                         <div class="items">
-                            <img src="/drawables/mobile_icon.png" alt="">
+                            <img src="../drawables/mobile_icon.png" alt="">
                             <div class="text">
                                 <h4>Mobile No</h4>
                                 <p>+971 50 707 3968  |  +971 50 707 3611<br>+971 50 707 8773</p>
@@ -112,14 +113,14 @@
 
     <footer>
         <div class="sideA">
-            <img class="footerlogo" src="/drawables/Logo.png" alt="Logo.png">
+            <img class="footerlogo" src="../drawables/Logo.png" alt="Logo.png">
             <p>© Copyright 2023 | All Rights Reserved</p>
         </div>
     
         <div class="sideB">
-            <img src="/drawables/facebook.svg" alt="Facebook">
-            <img src="/drawables/phone.svg" alt="Phone">
-            <img src="/drawables/mail.svg" alt="Mail">
+            <img src="../drawables/facebook.svg" alt="Facebook">
+            <img src="../drawables/phone.svg" alt="Phone">
+            <img src="../drawables/mail.svg" alt="Mail">
         </div>
     </footer>
 

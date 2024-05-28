@@ -1,0 +1,5 @@
+services/.env
+/vendor/
+services/PHPMailer/  
+composer.json
+composer.lock
