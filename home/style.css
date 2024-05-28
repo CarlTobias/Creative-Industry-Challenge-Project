@@ -25,7 +25,7 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 8%;
 }
 
 .pageLinks {
@@ -298,6 +298,7 @@ footer {
 
 .sideA {
     margin-left: 20px;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -325,13 +326,14 @@ footer p {
     gap: 20px;
 }
 
+
 .sideB img {
-    width: 4%;
+    width: 8%;
+    cursor: pointer;
 }
 
 .sideB img:hover {
     filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
-    cursor: pointer;
 }
 
 
@@ -348,7 +350,7 @@ footer p {
     }
     
     .inquiryButton {
-        padding: 30px 65px;
+        padding: 30px 66px;
 
         font-size: 50px;
     }
@@ -388,11 +390,9 @@ footer p {
     .sideB {
         margin-right: 150px;
     }
-
-    footer img {
-        width: 10%;
-    }
 }
+
+/* ----- 1440px ----- */
 
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
     .pageLinks li {
@@ -404,7 +404,7 @@ footer p {
     }
 
     .inquiryButton {
-        padding: 20px 35px;
+        padding: 20px 36px;
 
         font-size: 30px;
     }
@@ -429,18 +429,7 @@ footer p {
     }
 
     .calendarSection {
-        position: absolute;
-
-        width: 70vw;
-        height: 65vh;
         margin-top: 160px;
-        border-radius: 32px;
-
-        display: flex;
-        flex-direction: row;
-
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .calendar {
@@ -467,7 +456,81 @@ footer p {
         margin-right: 100px;
     }
 
-    footer img {
-        width: 8%;
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 1024px ----- */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .logo {
+        width: 6%;
+    }
+
+    .pageLinks li {
+        font-size: 16px;
+    }
+
+    .headerText {
+        font-size: 75px;
+    }
+
+    .inquiryButton {
+        padding: 18px 30px;
+
+        font-size: 24px;
+    }
+
+    .partTwoHeader {
+        font-size: 60px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 20px;
+    }
+
+    .partTwoParagraph {
+        font-size: 16px;
+    }
+
+    .partThreeHeader {
+        margin-top: 60px;
+        padding: 30px;
+
+        font-size: 50px;
+    }
+
+    .calendarSection {
+        margin-top: 140px;
+    }
+
+    .calendar {
+        padding: 20px;
+    }
+
+    .calendar ul {
+        font-size: 12px;
+    }
+
+    .monthYear {
+        font-size: 40px;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
     }
 }
