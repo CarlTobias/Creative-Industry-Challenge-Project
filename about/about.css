@@ -349,3 +349,55 @@ footer p {
         font-size: 16px;
     }
 }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .header p {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .backgroundimage {
+        height: 50vh;
+        margin-bottom: -150px;
+    }
+    
+    .section1 {
+        margin-bottom: -200px;
+    }
+
+    .one h2 {
+        margin-top: -25px;
+    }
+
+    .one h2, .two h2 {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+
+    aside p {
+        font-size: 12px;
+        width: 100%;
+    }
+    .section2 p {
+        font-size: 14px;
+    }
+
+    .boxes {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    .box p {
+        margin-top: -30px;
+        font-size: 12px;
+    } 
+}
