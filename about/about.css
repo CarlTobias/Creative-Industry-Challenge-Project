@@ -135,7 +135,7 @@ nav {
     background-color:#FBE8DE;
     overflow: hidden;
     width: 80%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 
@@ -146,7 +146,7 @@ nav {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: -500px;
+    margin-bottom: -400px;
 }
 
 /* change font size and padding */
@@ -156,13 +156,13 @@ aside {
 }
 
 aside p {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     font-size: 20px;
 }
 .one h2, 
 .two h2 {
-    padding: 60px 0;
+    padding: 40px 0;
     font-family: "League Spartan", sans-serif;
     font-size: 40px;
     font-weight: bolder;
@@ -170,7 +170,7 @@ aside p {
 }
 
 .section1 img {
-    width: 800px;
+    width: 100vh;
 }
 
 
@@ -178,6 +178,9 @@ aside p {
 
 .backgroundimage2 {
     margin-bottom: -20%;
+}
+.backgroundimage2 img {
+    width: 50%;
 }
 
 .section2 {
@@ -189,6 +192,10 @@ aside p {
     margin: 0 auto;
     gap: 5%;
     align-items: center;
+}
+
+.section2 img {
+    width: 50vw;
 }
 
 .section2 p {
@@ -237,10 +244,10 @@ aside p {
 }
 
 .box p {
-    margin-top: 40px;
+    margin-top: 2vh;
     text-align: center;
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
     align-self: center;
 }
 
@@ -250,7 +257,7 @@ aside p {
 footer {
     background-color: #0E0C0C;
     width: 100%;
-
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
