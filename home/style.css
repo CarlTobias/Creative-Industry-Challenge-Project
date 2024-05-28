@@ -372,7 +372,7 @@ footer p {
     }
     
     .calendar ul {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .monthYear {
@@ -437,10 +437,13 @@ footer p {
     }
 
     .calendar ul {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .monthYear {
+        padding: 14px;
+        padding-bottom: 0;
+        
         font-size: 60px;
     }
 
@@ -464,7 +467,7 @@ footer p {
 
 /* ----- 1024px ----- */
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
     .logo {
         width: 6%;
     }
@@ -515,6 +518,9 @@ footer p {
     }
 
     .monthYear {
+        padding: 14px;
+        padding-bottom: 0;
+
         font-size: 40px;
     }
 
@@ -528,6 +534,83 @@ footer p {
 
     .sideB {
         margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 768px ----- */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        width: 8%;
+    }
+
+    .pageLinks li {
+        font-size: 14px;
+    }
+
+    .headerText {
+        font-size: 65px;
+    }
+
+    .inquiryButton {
+        padding: 14px 25px;
+
+        font-size: 20px;
+    }
+
+    .partTwoHeader {
+        font-size: 55px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 18px;
+    }
+
+    .partTwoParagraph {
+        font-size: 14px;
+    }
+
+    .partThreeHeader {
+        margin-top: 40px;
+        padding: 30px;
+
+        font-size: 36px;
+    }
+
+    .calendarSection {
+        margin-top: 110px;
+
+        width: 75vw;
+        height: 60vh;
+    }
+
+    .calendar {
+        padding: 8px;
+    }
+
+    .calendar ul {
+        font-size: 10px;
+    }
+
+    .monthYear {
+        font-size: 32px;
+    }
+
+    .sideA {
+        margin-left: 60px;
+    }
+
+    footer p {
+        font-size: 6px;
+    }
+
+    .sideB {
+        margin-right: 60px;
     }
 
     .sideB img {
