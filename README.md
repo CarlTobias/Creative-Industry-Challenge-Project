@@ -43,7 +43,7 @@
         composer require phpmailer/phpmailer
         ```
        
-    3. Update your `process_form.php` to include PHPMailer::
+    3. Update your `process_form.php` to include PHPMailer:
 
         ```sh
         <?php
