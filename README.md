@@ -5,8 +5,8 @@
 1. **Install dependencies:**
 
     ```sh
-     composer install
-     composer require vlucas/phpdotenv
+    composer install
+    composer require vlucas/phpdotenv
     ```
 
 2. **Set up environment variables:**
@@ -14,38 +14,38 @@
     1. Rename the `.env.example` file to `.env`:
 
         ```sh
-         cp .env.example .env
+        cp .env.example .env
         ```
 
     2. Open the `.env` file in your preferred text editor and replace the placeholder values with your actual environment variables:
 
         ```env
-         EMAIL_USERNAME=your_actual_email@example.com
-         EMAIL_PASSWORD=your_actual_password
+        EMAIL_USERNAME=your_actual_email@example.com
+        EMAIL_PASSWORD=your_actual_password
         ```
 
     3. Update your `process_form.php` to load the environment variables:
        
-       ```sh
+        ```sh
         require "../vendor/autoload.php";
-
+        
         use Dotenv\Dotenv;
-
+        
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
-       ```
+        ```
 
 3. **Install PHP Mailer:**
 
     1. Add PHPMailer to your project using Composer:
 
         ```sh
-         composer require phpmailer/phpmailer
+        composer require phpmailer/phpmailer
         ```
        
     3. Update your `process_form.php` to include PHPMailer::
 
-       ```sh
+        ```sh
         require "../vendor/autoload.php";
         require "./PHPMailer/src/PHPMailer.php";
         require "./PHPMailer/src/Exception.php";
@@ -81,7 +81,7 @@
             $mail->Password = $password;
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
-
+        
             // Set sender and recipient
             $mail->setFrom($email, $name); // User's email and name
             $mail->addAddress($username, "Throwaway"); // Your email
@@ -104,4 +104,4 @@
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
-       ```
+        ```    
