@@ -10,6 +10,7 @@ h2, h3 {
     margin: 0;
 }
 
+
 /* ----- TOP NAV BAR ----- */
 
 nav {
@@ -24,7 +25,7 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 8%;
 }
 
 .pageLinks {
@@ -90,7 +91,7 @@ nav {
     flex-direction: column;
     justify-content: center;  
     align-items: center; 
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -164,8 +165,6 @@ nav {
 }
 
 .imageSliderImage {
-    /* width and height added to keep them same size, manually
-    resize images and remove width and height */
     margin: 2vh 1vh;
     width: calc(100%/3.5);
     background-size: cover;
@@ -209,7 +208,7 @@ nav {
     background-color: #FBE8DE;
 
     display: flex;
-    height: 110vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -230,7 +229,8 @@ nav {
     position: absolute;
    
     width: 70vw;
-    height: 80vh;
+    height: 65vh;
+    min-height: fit-content;
     background-color: #511A19;
     margin-top: 230px;
     border-radius: 32px;
@@ -245,18 +245,16 @@ nav {
 .calendar {
     justify-self: center;
     width: 100%;
-    padding: 30px;
     overflow: hidden;
 }
 
 .calendar ul {
-    padding: 5px;
-
     color: #FEFEFE;
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 200;
     text-align: center;
+    margin: 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -265,28 +263,56 @@ nav {
 }
 
 .calendar ul li {
+    position: relative;
     width: calc(100% / 7);
-    margin-top: 5vh;
 }
 
 .monthYear {
     color: #FEFEFE;
     font-family: "League Spartan", sans-serif;
-    padding: 20px;
+    padding: 30px;
     font-size: 70px;
     font-weight: 700;
 }
 
-.calender .days {
-    margin-bottom: 20px;
+.calendar .days li {
+    cursor: pointer;
+    margin-top: 5vh;
 }
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.days li:hover::before {
+    background-color: #3E0202;
+    z-index: -1;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active::before {
+    z-index: -1;
+    background-color: #FF0103;
+}
+
 
 
 /* ----- FOOTER ----- */
 
 footer {
     background-color: #0E0C0C;
+
     width: 100%;
+    height: 10vh;
 
     display: flex;
     justify-content: space-between;
@@ -295,6 +321,7 @@ footer {
 
 .sideA {
     margin-left: 20px;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -303,12 +330,14 @@ footer {
 }
 
 footer p {
-    color: #FFFFFF;
     width: max-content;
+
+    color: #FFFFFF;
+    font-size: 20px;
 }
 
 .footerlogo {
-    height: 50px;
+    width: 20%;
 }
 
 .sideB {
@@ -320,10 +349,222 @@ footer p {
     gap: 20px;
 }
 
+
 .sideB img {
-    width: 4%;
+    width: 8%;
+    cursor: pointer;
 }
 
-.sideB:hover {
+.sideB img:hover {
     filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* ----- 2560px ----- */
+@media only screen and (min-width: 2560px) {
+    .pageLinks li {
+        font-size: 30px;
+    }
+
+    .headerText {
+        font-size: 120px;
+    }
+    
+    .inquiryButton {
+        padding: 30px 66px;
+
+        font-size: 50px;
+    }
+
+    .partTwoHeader {
+        font-size: 100px;
+    }
+    
+    .partTwoSubtitle {
+        font-size: 60px;
+    }
+    
+    .partTwoParagraph {
+        font-size: 40px;
+    }
+
+    .calendar {
+        padding: 45px;
+    }
+    
+    .calendar ul {
+        font-size: 30px;
+    }
+
+    .monthYear {
+        font-size: 100px;
+    }
+
+    .sideA {
+        margin-left: 150px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .sideB {
+        margin-right: 150px;
+    }
+}
+
+/* ----- 1440px ----- */
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+    .pageLinks li {
+        font-size: 20px;
+    }
+
+    .headerText {
+        font-size: 100px;
+    }
+
+    .inquiryButton {
+        padding: 20px 36px;
+
+        font-size: 30px;
+    }
+
+    .partTwoHeader {
+        font-size: 80px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 40px;
+    }
+
+    .partTwoParagraph {
+        font-size: 20px;
+    }
+
+    .partThreeHeader {
+        margin-top: 80px;
+        padding: 30px;
+
+        font-size: 50px;
+    }
+
+    .calendarSection {
+        margin-top: 160px;
+    }
+
+    .calendar {
+        padding: 25px;
+    }
+
+    .calendar ul {
+        font-size: 14px;
+    }
+
+    .calendar .days li::before {
+        height: 30px;
+        width: 30px;
+    }
+    
+
+    .monthYear {
+        font-size: 60px;
+    }
+
+    .sideA {
+        margin-left: 100px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .sideB {
+        margin-right: 100px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+
+/* ----- 1024px ----- */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .logo {
+        width: 6%;
+    }
+
+    .pageLinks li {
+        font-size: 16px;
+    }
+
+    .headerText {
+        font-size: 75px;
+    }
+
+    .inquiryButton {
+        padding: 18px 30px;
+
+        font-size: 24px;
+    }
+
+    .partTwoHeader {
+        font-size: 60px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 20px;
+    }
+
+    .partTwoParagraph {
+        font-size: 16px;
+    }
+
+    .partThreeHeader {
+        margin-top: 60px;
+        padding: 30px;
+
+        font-size: 50px;
+    }
+
+    .calendarSection {
+        margin-top: 140px;
+    }
+
+    .calendar {
+        padding: 20px;
+    }
+
+    .calendar ul {
+        font-size: 12px;
+    }
+
+    .monthYear {
+        font-size: 40px;
+    }
+
+    .calendar .days li::before {
+        height: 25px;
+        width: 25px;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
 }
