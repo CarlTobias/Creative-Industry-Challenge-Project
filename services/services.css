@@ -250,6 +250,8 @@ textarea:focus {
     margin: 0 auto;
     border: none;
     font-size: 22px;
+    width: 150px;
+    cursor: pointer;
 }
 
 
