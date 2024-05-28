@@ -17,7 +17,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 90vh);
+    height: 10vh;
 }
 
 .logo {
@@ -40,8 +40,9 @@ nav {
     color: #1E1E1E;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
+    font-size: 20px;
     position: relative;
 }
 
@@ -292,12 +293,14 @@ h4 {
     margin-bottom: 5%;
 }
 
-/* ---- FOOTER ----- */
+/* ----- FOOTER ----- */
 
 footer {
     background-color: #0E0C0C;
+
     width: 100%;
-    padding: 10px 0;
+    height: 10vh;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -305,7 +308,7 @@ footer {
 
 .sideA {
     margin-left: 20px;
-    background-color: #0E0C0C;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -313,33 +316,19 @@ footer {
 }
 
 footer p {
-    background-color: #0E0C0C;
-    color: #FFFFFF;
     width: max-content;
+
+    color: #FFFFFF;
+    font-size: 20px;
 }
 
 .footerlogo {
-    height: 50px;
-    background-color: #0E0C0C;
+    width: 20%;
 }
 
 .sideB {
     margin-right: 20px;
 
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 20px;
-}
-
-.sideB img {
-    width: 4%;
-    background-color: #0E0C0C;
-}
-
-.sideB {
-    margin-right: 20px;
-    background-color: #0E0C0C;
     display: flex;
     justify-content: right;
     align-items: center;
