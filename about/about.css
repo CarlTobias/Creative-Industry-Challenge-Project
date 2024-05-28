@@ -127,7 +127,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 70vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -135,7 +135,7 @@ nav {
     background-color:#FBE8DE;
     overflow: hidden;
     width: 80%;
-    height: 80vh;
+    height: 45vw;
     display: flex;
     justify-content: center;
 
@@ -162,7 +162,8 @@ aside p {
 }
 .one h2, 
 .two h2 {
-    padding: 40px 0;
+    margin-top: 20px;
+    padding: 30px 0;
     font-family: "League Spartan", sans-serif;
     font-size: 40px;
     font-weight: bolder;
@@ -170,7 +171,7 @@ aside p {
 }
 
 .section1 img {
-    width: 100vh;
+    width: 45%;
 }
 
 
@@ -292,4 +293,111 @@ footer p {
 
 .sideB img {
     width: 4%;
+}
+
+.sideB {
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.sideB img {
+    width: 4%;
+}
+
+.sideB img:hover {
+    filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+    cursor: pointer;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+    
+    .section1 {
+        margin-bottom: -200px;
+    }
+
+    .one h2 {
+        margin-top: 5px;
+    }
+    .one h2, .two h2 {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    
+    aside p {
+        font-size: 16px;
+        width: 90%;
+    }
+    .section2 p {
+        font-size: 18px;
+    }
+
+    .box p {
+        margin-top: -10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .header p {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .backgroundimage {
+        height: 50vh;
+        margin-bottom: -150px;
+    }
+    
+    .section1 {
+        margin-bottom: -200px;
+    }
+
+    .one h2 {
+        margin-top: -25px;
+    }
+
+    .one h2, .two h2 {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+
+    aside p {
+        font-size: 12px;
+        width: 100%;
+    }
+    .section2 p {
+        font-size: 14px;
+    }
+
+    .boxes {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    .box p {
+        margin-top: -30px;
+        font-size: 12px;
+    } 
 }

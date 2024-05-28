@@ -182,7 +182,7 @@ section p {
     width: 75%;
     justify-content: space-around;
     position: relative;
-    margin-top: 9%;
+    margin-top: 15vw;
     border-radius: 0 20px 20px 0;
 }
 
@@ -292,13 +292,12 @@ h4 {
     margin-bottom: 5%;
 }
 
-
-/* ----- FOOTER ---- */
+/* ---- FOOTER ----- */
 
 footer {
     background-color: #0E0C0C;
     width: 100%;
-
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -306,7 +305,7 @@ footer {
 
 .sideA {
     margin-left: 20px;
-
+    background-color: #0E0C0C;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -314,12 +313,14 @@ footer {
 }
 
 footer p {
+    background-color: #0E0C0C;
     color: #FFFFFF;
     width: max-content;
 }
 
 .footerlogo {
     height: 50px;
+    background-color: #0E0C0C;
 }
 
 .sideB {
@@ -333,4 +334,23 @@ footer p {
 
 .sideB img {
     width: 4%;
+    background-color: #0E0C0C;
+}
+
+.sideB {
+    margin-right: 20px;
+    background-color: #0E0C0C;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.sideB img {
+    width: 4%;
+}
+
+.sideB img:hover {
+    filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+    cursor: pointer;
 }
