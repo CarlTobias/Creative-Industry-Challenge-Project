@@ -25,8 +25,8 @@ try {
     $mail->SMTPAuth   = true;             
     
     // trying to implement .env file to secure the info
-    $mail->Username   = // company gmail;
-    $mail->Password   = // company password (has to be passkey);     
+    $mail->Username   = getenv('EMAIL_USERNAME');
+    $mail->Password   = getenv('EMAIL_PASSWORD');     
     $mail->SMTPSecure = 'tls';           
     $mail->Port       = 587;             
 
