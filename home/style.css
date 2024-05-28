@@ -629,6 +629,10 @@ footer p {
         width: 25px;
     }
 
+    .landscapeImage {
+        display: none;
+    }
+
     .sideA {
         margin-left: 80px;
     }
