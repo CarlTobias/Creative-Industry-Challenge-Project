@@ -45,7 +45,7 @@
         https://github.com/PHPMailer/PHPMailer
         ```
 
-    2. Unzip it to `services/` :
+    2. Unzip it to `services/`
        
     3. Add requirements to `process_form.php`:
 
