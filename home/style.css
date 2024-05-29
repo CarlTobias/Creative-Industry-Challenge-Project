@@ -426,6 +426,7 @@ footer p {
     }
 
     .monthYear {
+        padding-bottom: 80px;
         font-size: 100px;
     }
 
@@ -496,10 +497,9 @@ footer p {
         width: 30px;
     }
     
-
     .monthYear {
         padding: 14px;
-        padding-bottom: 0;
+        padding-bottom: 40px;
         
         font-size: 60px;
     }
@@ -577,7 +577,7 @@ footer p {
 
     .monthYear {
         padding: 14px;
-        padding-bottom: 0;
+        padding-bottom: 40px;
 
         font-size: 40px;
     }
