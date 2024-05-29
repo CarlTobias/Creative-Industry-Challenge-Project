@@ -43,16 +43,16 @@
         composer require phpmailer/phpmailer
         ```
        
-    3. Update your `process_form.php` to include PHPMailer::
+    3. Update your `process_form.php` to include PHPMailer:
 
         ```sh
         <?php
 
         // Include PHPMailer classes
         require "../vendor/autoload.php";
-        require "./PHPMailer/src/PHPMailer.php";
-        require "./PHPMailer/src/Exception.php";
-        require "./PHPMailer/src/SMTP.php";
+        require "../vendor/PHPMailer/src/PHPMailer.php";
+        require "../vendor/PHPMailer/src/Exception.php";
+        require "../vendor/PHPMailer/src/SMTP.php";
         
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\Exception;
