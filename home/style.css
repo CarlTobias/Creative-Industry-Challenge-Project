@@ -24,11 +24,19 @@ nav {
     height: 10vh;
 }
 
-.logo {
-    width: 8%;
+.brandLogo {
+    width: 10%;
 }
 
-.pageLinks {
+.logo {
+    width: 100%;
+}
+
+.links {
+    width: fit-content;
+}
+
+.pageLinks{
     list-style: none;
     display: flex;
     margin: 0 20px;
@@ -77,6 +85,25 @@ nav {
     transform: translateX(50%) scaleX(1);
 }
 
+/* ----- MENU BUTTON ----- */
+
+.menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    display: none;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
 
 /* ----- MAIN PAGE HEADER ----- */
 
@@ -499,8 +526,8 @@ footer p {
 /* ----- 1024px ----- */
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    .logo {
-        width: 6%;
+    .brandLogo {
+        width: 8%;
     }
 
     .pageLinks li {
@@ -658,27 +685,47 @@ footer p {
 
 }
 
+/* ----- 425px ----- */
+
 @media only screen and (min-width: 425px) and (max-width: 767px) {
     
     nav {
         height: 8vh;
-    }
-
-    
-    .pageLinks {
-        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 8vh;
-        right: -20px;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .links {
+        flex-direction: column;
         background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 280px;
+        display: none;
     }
 
-    ul li {
-        margin: 10px 0;
-        margin-right: 50px;
+    .links.active {
+        display: flex;
     }
 
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
+    .menu {
+        display: flex;
+    }
 
     .splashScreenHeader {
         width: 100vw;
@@ -748,83 +795,6 @@ footer p {
     .sideB {
         margin-right: 80px;
         width: fit-content;
-    }
-
-    .sideB img {
-        width: 6%;
-    }
-}
-
-
-/* ----- 768px ----- */
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .logo {
-        width: 8%;
-    }
-
-    .pageLinks li {
-        font-size: 14px;
-    }
-
-    .headerText {
-        font-size: 65px;
-    }
-
-    .inquiryButton {
-        padding: 14px 25px;
-
-        font-size: 20px;
-    }
-
-    .partTwoHeader {
-        font-size: 55px;
-    }
-
-    .partTwoSubtitle {
-        font-size: 18px;
-    }
-
-    .partTwoParagraph {
-        font-size: 14px;
-    }
-
-    .partThreeHeader {
-        margin-top: 40px;
-        padding: 30px;
-
-        font-size: 36px;
-    }
-
-    .calendarSection {
-        margin-top: 110px;
-
-        width: 75vw;
-        height: 60vh;
-    }
-
-    .calendar {
-        padding: 8px;
-    }
-
-    .calendar ul {
-        font-size: 10px;
-    }
-
-    .monthYear {
-        font-size: 32px;
-    }
-
-    .sideA {
-        margin-left: 60px;
-    }
-
-    footer p {
-        font-size: 6px;
-    }
-
-    .sideB {
-        margin-right: 60px;
     }
 
     .sideB img {
