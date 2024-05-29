@@ -559,3 +559,63 @@ footer p {
         width: 6%;
     }
 }
+
+/* ----- 425px ----- */
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 280px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    .sideA {
+        margin-left: 80px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .sideB {
+        margin-right: 80px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
