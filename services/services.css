@@ -376,6 +376,9 @@ footer p {
 }
 
 
+
+
+
 /* ----- MEDIA QUERIES ----- */
 
 /* ----- 2560px ----- */
@@ -454,7 +457,7 @@ footer p {
 /* ----- 1024px ----- */
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    .brandLogo {
+    .logo {
         width: 8%;
     }
 
@@ -533,10 +536,7 @@ footer p {
 
 /* ----- 768px ----- */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .brandLogo {
-        width: 6%;
-    }
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
 
     .pageLinks li {
         font-size: 14px;
@@ -548,6 +548,11 @@ footer p {
 
     .header p {
         font-size: 18px;
+    }
+
+    section p {
+        font-size: 18px;
+        width: 80%;
     }
 
     .heading {
@@ -572,7 +577,7 @@ footer p {
         margin-left: 10px;
     }
 
-    form input {
+    form input, form textarea {
         margin: 10px 0;
         font-size: 16px;
     }
@@ -604,236 +609,529 @@ footer p {
     .sideB img {
         width: 6%;
     }
+}
 
-    .sideB img:hover {
-        filter: invert(41%) sepia(100%) saturate(5472%) hue-rotate(358deg) brightness(101%) contrast(99%);
+/* ----- 425px ----- */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-
-    /* ----- MEDIA QUERIES ----- */
-
-    /* ----- 2560px ----- */
-    @media only screen and (min-width: 2560px) {
-        .pageLinks li {
-            font-size: 30px;
-        }
-
-        .goback nav {
-            font-size: 30px;
-        }
-
-        .header h1 {
-            font-size: 120px;
-        }
-
-        .header p {
-            font-size: 30px;
-        }
-
-        section p {
-            font-size: 30px;
-        }
-
-        .sideA {
-            margin-left: 150px;
-        }
-
-        footer p {
-            font-size: 30px;
-        }
-
-        .sideB {
-            margin-right: 150px;
-        }
+    .brandLogo {
+        width: 15%;
+        margin-top: 15px;
     }
 
-
-    /* ----- 1440px ----- */
-
-    @media only screen and (min-width: 1440px) and (max-width: 2559px) {
-        .pageLinks li {
-            font-size: 20px;
-        }
-
-        .header h1 {
-            font-size: 80px;
-        }
-
-        .header p {
-            font-size: 24px;
-        }
-
-        section p {
-            font-size: 24px;
-        }
-
-        .sideA {
-            margin-left: 100px;
-        }
-
-        footer p {
-            font-size: 20px;
-        }
-
-        .sideB {
-            margin-right: 100px;
-        }
-
-        .sideB img {
-            width: 6%;
-        }
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
     }
 
-
-    /* ----- 1024px ----- */
-
-    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-        .logo {
-            width: 8%;
-        }
-
-        .pageLinks li {
-            font-size: 16px;
-        }
-
-        .header h1 {
-            font-size: 60px;
-        }
-
-        .header p {
-            font-size: 20px;
-        }
-
-        section p {
-            font-size: 18px;
-        }
-
-        .heading {
-            margin-bottom: 50%;
-        }
-
-        .heading h2 {
-            padding: 30px;
-            font-size: 40px;
-        }
-
-        .inquiry {
-            width: 90vw;
-            height: 75vh;
-            position: relative;
-            margin-top: 10vw;
-            border-radius: 0 20px 20px 0;
-        }
-
-        .inputfields {
-            width: 90%;
-            margin-left: 10px;
-        }
-
-        form input {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-
-        .partTwo h3 {
-            font-size: 26px;
-        }
-
-        .partTwo h4 {
-            font-size: 20px;
-        }
-
-        .partTwo p {
-            font-size: 16px;
-        }
-
-        .sideA {
-            margin-left: 80px;
-        }
-
-        footer p {
-            font-size: 10px;
-        }
-
-        .sideB {
-            margin-right: 80px;
-        }
-
-        .sideB img {
-            width: 6%;
-        }
+    .links.active {
+        display: flex;
+        font-size: 16px;
     }
 
-
-    /* ----- 768px ----- */
-
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-        .pageLinks li {
-            font-size: 14px;
-        }
-
-        .header h1 {
-            font-size: 40px;
-        }
-
-        .header p {
-            font-size: 18px;
-        }
-
-        .heading {
-            margin-bottom: 70%;
-        }
-
-        .heading h2 {
-            padding: 20px;
-            font-size: 25px;
-        }
-
-        .inquiry {
-            width: 90vw;
-            height: 75vh;
-            position: relative;
-            margin-top: 8vw;
-            border-radius: 0 20px 20px 0;
-        }
-
-        .inputfields {
-            width: 90%;
-            margin-left: 10px;
-        }
-
-        form input {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-
-        .partTwo h3 {
-            font-size: 26px;
-        }
-
-        .partTwo h4 {
-            font-size: 20px;
-        }
-
-        .partTwo p {
-            font-size: 16px;
-        }
-
-        .sideA {
-            margin-left: 80px;
-        }
-
-        footer p {
-            font-size: 6px;
-        }
-
-        .sideB {
-            margin-right: 80px;
-        }
-
-        .sideB img {
-            width: 6%;
-        }
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
     }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    .goback nav {
+        font-size: 16px;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* body */
+
+    .header {
+        padding: 6rem 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    section p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .heading {
+        margin-bottom: 80%;
+    }
+
+    .heading h2 {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /* Inquiry */
+
+    .inquiry {
+        width: 95vw;
+        height: 60vh;
+        position: relative;
+        margin-top: 12vw;
+        border-radius: 0 20px 20px 0;
+        gap: 0;
+    }
+    
+    .partOne h3 {
+        font-size: 22px;
+    }
+    
+    .inputfields {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    form input, form textarea {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    #message {
+        height: 150px;
+    }
+
+    #send {
+        font-size: 12px;
+    }
+
+    /* partTwo */
+
+    .partTwo h3 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .partTwo h4 {
+        font-size: 20px;
+    }
+
+    .partTwo p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 20%;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 10%;
+    }
+}
+
+/* ----- 375px ----- */
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    .goback nav {
+        font-size: 16px;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* body */
+
+    .header {
+        padding: 6rem 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    section p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .background {
+        height: 135vh;
+        background-repeat: repeat;
+    }
+
+    .heading {
+        margin-bottom: 260%;
+    }
+
+    .heading h2 {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /* inquiry */
+
+    .inquiry {
+        width: 95vw;
+        height: fit-content;
+        position: relative;
+        margin-top: 5vh;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        box-shadow: none;
+    }
+    
+    .partOne, .partTwo {
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+    .partOne h3 {
+        font-size: 22px;
+    }
+    
+    .inputfields {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    form input, form textarea {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    #message {
+        height: 150px;
+    }
+
+    #send {
+        font-size: 12px;
+    }
+
+    /* partTwo */
+
+    .details {
+        margin-bottom: 0;
+    }
+
+    .partTwo h3 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .partTwo h4 {
+        font-size: 20px;
+    }
+
+    .partTwo p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 40px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
+    }
+}
+
+/* ----- 375px below ----- */
+
+@media only screen and (max-width: 375px) {
+
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    .goback nav {
+        font-size: 16px;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* body */
+
+    .header {
+        padding: 6rem 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    section p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .background {
+        height: 135vh;
+        background-repeat: repeat;
+    }
+
+    .heading {
+        margin-bottom: 260%;
+    }
+
+    .heading h2 {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /* inquiry */
+
+    .inquiry {
+        width: 95vw;
+        height: fit-content;
+        position: relative;
+        margin-top: 20vh;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        box-shadow: none;
+    }
+    
+    .partOne, .partTwo {
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+    .partOne h3 {
+        font-size: 22px;
+    }
+    
+    .inputfields {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    form input, form textarea {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    #message {
+        height: 150px;
+    }
+
+    #send {
+        font-size: 12px;
+    }
+
+    /* partTwo */
+
+    .details {
+        margin-bottom: 0;
+    }
+
+    .partTwo h3 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .partTwo h4 {
+        font-size: 20px;
+    }
+
+    .partTwo p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 6px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 30px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
+    }
+
 }

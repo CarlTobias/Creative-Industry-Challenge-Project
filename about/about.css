@@ -564,7 +564,6 @@ footer p {
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
 
-
     /* navbar */
 
     nav {
@@ -574,7 +573,7 @@ footer p {
     }
 
     .brandLogo {
-        width: 25%;
+        width: 15%;
         margin-top: 15px;
     }
 
@@ -618,6 +617,8 @@ footer p {
         justify-content: space-around;
         align-items: center;
     }
+
+    /* body */
 
     .header {
         padding: 6rem 0;
@@ -702,7 +703,7 @@ footer p {
     }
 
     footer p {
-        font-size: 8px;
+        font-size: 12px;
         text-align: left;
     }
 
@@ -711,7 +712,7 @@ footer p {
     }
 
     .sideA img {
-        width: 40px;
+        width: 20%;
     }
 
     .sideB {
@@ -720,7 +721,7 @@ footer p {
     }
 
     .sideB img {
-        width: 16%;
+        width: 10%;
     }
 }
 
