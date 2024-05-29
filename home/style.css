@@ -689,8 +689,49 @@ footer p {
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
 
-    nav a {
-        font-size: 16px;
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
     }
     
     .splashScreenHeader {
@@ -799,6 +840,7 @@ footer p {
     .links {
         flex-direction: column;
         background-color: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 4.4rem;
         width: 100%;
@@ -916,6 +958,7 @@ footer p {
     .links {
         flex-direction: column;
         background-color: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 4.4rem;
         width: 100%;

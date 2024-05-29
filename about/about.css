@@ -580,6 +580,7 @@ footer p {
     .links {
         flex-direction: column;
         background-color: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 4.4rem;
         width: 100%;
@@ -745,6 +746,7 @@ footer p {
     .links {
         flex-direction: column;
         background-color: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 4.4rem;
         width: 100%;
@@ -910,6 +912,7 @@ footer p {
     .links {
         flex-direction: column;
         background-color: #FFFFFF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 4.4rem;
         width: 100%;
