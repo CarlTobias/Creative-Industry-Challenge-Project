@@ -40,14 +40,13 @@ renderCalendar();
 
 
 const images = [
-    'drawables/image3.png', 
-    'drawables/image4.png',
-    'drawables/image5.png',
+    'drawables/img1.png', 
+    'drawables/img2.png',
+    'drawables/img3.png',
     // change placeholder
-    'drawables/placeholder1.jpg', 
-    'drawables/placeholder2.jpg',
-    'drawables/placeholder3.jpg',   
-    'drawables/placeholder4.jpg'
+    'drawables/img4.png', 
+    'drawables/img5.png',
+    'drawables/img6.png'
     // add more images if needed
 ];
 
