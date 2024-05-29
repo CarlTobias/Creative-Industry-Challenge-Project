@@ -771,6 +771,9 @@ footer p {
 /* ----- 375px ----- */
 
 @media only screen and (min-width: 376px) and (max-width: 425px) {
+    
+    /* navbar */
+
     nav {
         height: 8vh;
         flex-direction: column;
@@ -789,7 +792,7 @@ footer p {
         top: 4.4rem;
         width: 100%;
         left: 0;
-        height: 280px;
+        height: 250px;
         display: none;
     }
 
@@ -804,8 +807,206 @@ footer p {
         margin-left: 0;
         margin-top: 1rem;
     }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
     
     .menu {
         display: flex;
     }
+
+    /* body */
+
+    .headerText {
+        font-size: 36px;
+    }
+
+    .splashScreenHeader button {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .partTwo {
+        margin-top: -20%;
+    }
+
+    .partTwoHeader {
+        font-size: 40px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 30px;
+    }
+
+    .partTwoParagraph {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .imageSliderImage {
+        width: calc(100%/1.5);
+    }
+
+    .navButton {
+        font-size: 40px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    }
+
+    .partThree {
+        display: none;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 40px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
+    }
 }
+
+/* ----- 325px below ----- */
+
+@media only screen and (max-width: 375px) {
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    /* body */
+
+    .headerText {
+        font-size: 32px;
+    }
+
+    .splashScreenHeader {
+        height: 80vh;
+    }
+
+    .splashScreenHeader button {
+        width: 200px;
+        padding: 0;
+        padding: 20px 0;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    .partTwo {
+        margin-top: -20%;
+    }
+    .partTwoHeader {
+        font-size: 30px;
+    }
+
+    .partTwoSubtitle {
+        font-size: 20px;
+    }
+
+    .partTwoParagraph {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .imageSliderImage {
+        width: calc(100%/1.5);
+    }
+
+    .navButton {
+        font-size: 40px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    }
+
+    .partThree {
+        display: none;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 6px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 30px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
+    }
+}
+
