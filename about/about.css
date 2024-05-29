@@ -564,68 +564,9 @@ footer p {
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
 
-    .pageLinks li {
-        font-size: 16px;
-    }
 
-    .goback nav {
-        font-size: 16px;
-    }
+    /* navbar */
 
-    .header h1 {
-        font-size: 40px;
-    }
-
-    .header p {
-        font-size: 12px;
-    }
-
-    aside {
-        padding: 20px 0;
-    }
-
-    .one h2,
-    .two h2 {
-        font-size: 22px;
-    }
-
-    .one p,
-    .two p {
-        font-size: 12px;
-    }
-
-    .section2 p {
-        font-size: 14px;
-    }
-
-    .box {
-        width: 30vh;
-    }
-
-    .box p {
-        font-size: 14px;
-    }
-
-    .sideA {
-        margin-left: 60px;
-    }
-
-    footer p {
-        font-size: 6px;
-    }
-
-    .sideB {
-        margin-right: 60px;
-    }
-
-    .sideB img {
-        width: 6%;
-    }
-}
-
-/* ----- 375px ----- */
-
-@media only screen and (min-width: 376px) and (max-width: 425px) {
     nav {
         height: 8vh;
         flex-direction: column;
@@ -634,7 +575,7 @@ footer p {
 
     .brandLogo {
         width: 25%;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .links {
@@ -644,12 +585,13 @@ footer p {
         top: 4.4rem;
         width: 100%;
         left: 0;
-        height: 280px;
+        height: 250px;
         display: none;
     }
 
     .links.active {
         display: flex;
+        font-size: 16px;
     }
 
     .pageLinks {
@@ -659,8 +601,455 @@ footer p {
         margin-left: 0;
         margin-top: 1rem;
     }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
     
     .menu {
         display: flex;
+    }
+
+    .goback nav {
+        font-size: 16px;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header {
+        padding: 6rem 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .backgroundimage {
+        height: 30vh;
+    }
+
+    /* section1 */
+
+    .section1 {
+        bottom: 80%;
+        width: 95%;
+        height: 40vh;
+    }
+
+    .section1 img {
+        display: none;
+    }
+
+    aside {
+        padding: 20px 0;
+        align-self: center;
+        gap: 30px;
+    }
+
+    .one h2,
+    .two h2 {
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    .one p,
+    .two p {
+        font-size: 12px;
+    }
+
+    /* section2 */
+
+    .backgroundimage2 {
+        margin-top: -60%;
+    }
+    .section2 p {
+        font-size: 12px;
+    }
+
+    .boxes {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 50vw;
+        height: 30vh;
+        border-radius: 20px;
+    }
+
+    .box img {
+        margin: 20px 0;
+    }
+
+    .box p {
+        font-size: 12px;
+        width: 85%;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 40px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
+    }
+}
+
+/* ----- 375px ----- */
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    .goback nav {
+        font-size: 16px;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* body */
+
+    .header {
+        padding: 6rem 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .backgroundimage {
+        height: 30vh;
+    }
+
+    /* section1 */
+
+    .section1 {
+        bottom: 80%;
+        width: 95%;
+        height: 40vh;
+    }
+
+    .section1 img {
+        display: none;
+    }
+
+    aside {
+        padding: 20px 0;
+        align-self: center;
+        gap: 30px;
+    }
+
+    .one h2,
+    .two h2 {
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    .one p,
+    .two p {
+        font-size: 12px;
+    }
+
+    /* section2 */
+
+    .backgroundimage2 {
+        margin-top: -60%;
+    }
+    .section2 p {
+        font-size: 12px;
+    }
+
+    .boxes {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 50vw;
+        height: 30vh;
+        border-radius: 20px;
+    }
+
+    .box img {
+        margin: 20px 0;
+    }
+
+    .box p {
+        font-size: 12px;
+        width: 85%;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 40px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
+    }
+}
+
+/* ----- 375px below ----- */
+
+@media only screen and (max-width: 375px) {
+
+    /* navbar */
+
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 250px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .pageLinks a {
+        font-size: 14px;
+    }
+    
+    .menu {
+        display: flex;
+    }
+
+    .goback nav {
+        font-size: 16px;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* body */
+
+    .header {
+        padding: 6rem 0;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .backgroundimage {
+        height: 30vh;
+    }
+
+    /* section1 */
+
+    .section1 {
+        bottom: 80%;
+        width: 95%;
+        height: 40vh;
+    }
+
+    .section1 img {
+        display: none;
+    }
+
+    aside {
+        padding: 20px 0;
+        align-self: center;
+        gap: 30px;
+    }
+
+    .one h2,
+    .two h2 {
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    .one p,
+    .two p {
+        font-size: 12px;
+    }
+
+    /* section2 */
+
+    .backgroundimage2 {
+        margin-top: -60%;
+    }
+    .section2 p {
+        font-size: 12px;
+    }
+
+    .boxes {
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 50vw;
+        height: 30vh;
+        border-radius: 20px;
+    }
+
+    .box img {
+        margin: 20px 0;
+    }
+
+    .box p {
+        font-size: 12px;
+        width: 85%;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 6px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 30px;
+    }
+
+    .sideB {
+        margin-right: 20px;
+        width: fit-content;
+    }
+
+    .sideB img {
+        width: 16%;
     }
 }

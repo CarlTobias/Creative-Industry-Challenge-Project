@@ -750,21 +750,32 @@ footer p {
         display: none;
     }
 
-    .sideA {
-        margin-left: 80px;
+    /* footer */
+
+    footer {
+        height: 80px;
     }
 
     footer p {
-        font-size: 10px;
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .sideA {
+        margin-left: 20px;
+    }
+
+    .sideA img {
+        width: 40px;
     }
 
     .sideB {
-        margin-right: 80px;
+        margin-right: 20px;
         width: fit-content;
     }
 
     .sideB img {
-        width: 6%;
+        width: 16%;
     }
 }
 
