@@ -688,45 +688,11 @@ footer p {
 /* ----- 425px ----- */
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-    
-    nav {
-        height: 8vh;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .brandLogo {
-        width: 25%;
-        margin-top: 10px;
-    }
-
-    .links {
-        flex-direction: column;
-        background-color: #FFFFFF;
-        position: absolute;
-        top: 4.4rem;
-        width: 100%;
-        left: 0;
-        height: 280px;
-        display: none;
-    }
-
-    .links.active {
-        display: flex;
-    }
-
-    .pageLinks {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin-left: 0;
-        margin-top: 1rem;
+    nav a {
+        font-size: 16px;
     }
     
-    .menu {
-        display: flex;
-    }
-
     .splashScreenHeader {
         width: 100vw;
     }
@@ -799,5 +765,47 @@ footer p {
 
     .sideB img {
         width: 6%;
+    }
+}
+
+/* ----- 375px ----- */
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    nav {
+        height: 8vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brandLogo {
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .links {
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 4.4rem;
+        width: 100%;
+        left: 0;
+        height: 280px;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .pageLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
+    .menu {
+        display: flex;
     }
 }

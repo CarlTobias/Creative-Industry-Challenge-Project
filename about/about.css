@@ -563,7 +563,69 @@ footer p {
 /* ----- 425px ----- */
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-    
+
+    .pageLinks li {
+        font-size: 16px;
+    }
+
+    .goback nav {
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    aside {
+        padding: 20px 0;
+    }
+
+    .one h2,
+    .two h2 {
+        font-size: 22px;
+    }
+
+    .one p,
+    .two p {
+        font-size: 12px;
+    }
+
+    .section2 p {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 30vh;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .sideA {
+        margin-left: 60px;
+    }
+
+    footer p {
+        font-size: 6px;
+    }
+
+    .sideB {
+        margin-right: 60px;
+    }
+
+    .sideB img {
+        width: 6%;
+    }
+}
+
+/* ----- 375px ----- */
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
     nav {
         height: 8vh;
         flex-direction: column;
@@ -600,22 +662,5 @@ footer p {
     
     .menu {
         display: flex;
-    }
-
-    .sideA {
-        margin-left: 80px;
-    }
-
-    footer p {
-        font-size: 10px;
-    }
-
-    .sideB {
-        margin-right: 80px;
-        width: fit-content;
-    }
-
-    .sideB img {
-        width: 6%;
     }
 }
