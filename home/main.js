@@ -59,7 +59,7 @@ nextButton.addEventListener('click', showPrevImages);
 
 function showPrevImages() {
     // change src link to name of the last src in the list.
-  if (images[2] !== "drawables/placeholder4.png") {
+  if (images[2] !== "drawables/img6.png") {
     const firstImage = images.shift();
     images.push(firstImage);
     updateImages();
@@ -67,7 +67,7 @@ function showPrevImages() {
 }
 
 function showNextImages() {
-  if (images[0] !== "drawables/image3.png") {
+  if (images[0] !== "drawables/img1.png") {
     const lastImage = images.pop();
     images.unshift(lastImage);
     updateImages();
